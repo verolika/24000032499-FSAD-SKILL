@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Water Services - Smart City</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="service-header">
+  💧 Smart Water Management
+  <p>Water supply tracking & complaint system</p>
+</div>
+
+<div class="service-container">
+
+  <!-- LIVE UPDATES -->
+  <div class="info-box">
+    <h3>Water Supply Updates</h3>
+    <ul>
+      <li>🚰 Supply delay – Sector 4</li>
+      <li>💧 Pipeline maintenance – Main Road</li>
+      <li>🌊 Tank refill completed – North Zone</li>
+      <li>⚠ Low pressure alert – West Area</li>
+    </ul>
+  </div>
+
+  <!-- REPORT ISSUE -->
+  <div class="complaint-panel">
+    <h3>Report Water Issue</h3>
+    <input type="text" placeholder="No supply / leakage / low pressure">
+    <input type="text" placeholder="Location">
+    <button>Submit Complaint</button>
+  </div>
+
+  <!-- RESOLVED -->
+  <div class="resolved-box">
+    <h3>Recently Resolved</h3>
+    <ul>
+      <li>✔ Pipeline leakage fixed – Sector 9</li>
+      <li>✔ Water supply restored – Downtown</li>
+      <li>✔ Tank cleaned – East Area</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- HELP CHAT -->
+<div class="chat-icon" onclick="toggleChat()">💬 Help</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Smart City Help</div>
+  <div class="chat-body">
+    <p>💧 Report water problems</p>
+    <p>🚰 Check supply schedules</p>
+    <p>📍 Track complaint status</p>
+  </div>
+</div>
+
+<script>
+function toggleChat(){
+  const box = document.getElementById("chatBox");
+  box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

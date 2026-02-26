@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electricity Services - Smart City</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="service-header">
+  ⚡ Smart Electricity Management
+  <p>Power supply monitoring & outage support</p>
+</div>
+
+<div class="service-container">
+
+  <!-- LIVE UPDATES -->
+  <div class="info-box">
+    <h3>Live Electricity Updates</h3>
+    <ul>
+      <li>⚡ Power outage – Sector 12</li>
+      <li>🔌 Maintenance scheduled – Main Grid</li>
+      <li>💡 New smart street lights installed</li>
+      <li>⚠ Voltage fluctuation alert – East Zone</li>
+    </ul>
+  </div>
+
+  <!-- REPORT ISSUE -->
+  <div class="complaint-panel">
+    <h3>Report Electricity Issue</h3>
+    <input type="text" placeholder="Power cut / voltage issue / street light problem">
+    <input type="text" placeholder="Location">
+    <button>Submit Complaint</button>
+  </div>
+
+  <!-- RESOLVED ISSUES -->
+  <div class="resolved-box">
+    <h3>Recently Resolved</h3>
+    <ul>
+      <li>✔ Transformer repaired – Sector 8</li>
+      <li>✔ Power restored – Market Area</li>
+      <li>✔ Street light fixed – City Center</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- HELP CHAT -->
+<div class="chat-icon" onclick="toggleChat()">💬 Help</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Smart City Help</div>
+  <div class="chat-body">
+    <p>⚡ Report electricity issues</p>
+    <p>💡 Check outage updates</p>
+    <p>📍 Track repair status</p>
+  </div>
+</div>
+
+<script>
+function toggleChat(){
+  const box = document.getElementById("chatBox");
+  box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

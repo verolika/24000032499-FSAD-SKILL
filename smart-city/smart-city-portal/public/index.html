@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart City Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">SmartCity</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Smart City</h1>
+    <p>Smart infrastructure, public services & citizen engagement</p>
+    <button onclick="location.href='signup.html'">Get Started</button>
+  </div>
+</section>
+
+<!-- SLIDER (UPDATED ONE ONLY) -->
+<section class="slides-section">
+  <h2>City Updates</h2>
+
+  <div class="slider-container">
+    <button class="nav-btn" onclick="prevSlide()">❮</button>
+
+    <div id="slider"></div>
+
+    <button class="nav-btn" onclick="nextSlide()">❯</button>
+  </div>
+
+  <div id="dots"></div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>City Services</h2>
+
+  <div class="card" onclick="openService('transport')">
+    <h3>Transport</h3>
+    <p>Metro & bus updates</p>
+  </div>
+
+  <div class="card" onclick="openService('hospitals')">
+    <h3>Hospitals</h3>
+    <p>Emergency & nearby hospitals</p>
+  </div>
+
+  <div class="card" onclick="openService('electricity')">
+    <h3>Electricity</h3>
+    <p>Power supply alerts</p>
+  </div>
+
+  <div class="card" onclick="openService('water')">
+    <h3>Water</h3>
+    <p>Water supply notifications</p>
+  </div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+<!-- HELP CHAT -->
+<div class="chat-icon" onclick="toggleChat()">💬 Help</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Smart City Help</div>
+
+  <div class="chat-body">
+    <p>Hello 👋</p>
+    <p>How can I help you?</p>
+    <ul>
+      <li>Login issue</li>
+      <li>Report city problem</li>
+      <li>View dashboard</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+
+<footer>
+  © 2026 Smart City Portal | Designed by Verolika
+</footer>
+</html>
+

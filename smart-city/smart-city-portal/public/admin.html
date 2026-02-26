@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Manage Homepage Slides</h2>
+
+<input id="title" placeholder="Slide title">
+<input id="desc" placeholder="Description">
+<input id="img" placeholder="Image URL">
+
+<button onclick="addSlide()">Add Slide</button>
+
+<!-- Help Chat -->
+<div class="chat-icon" onclick="toggleChat()">💬 Help</div>
+
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Smart City Help</div>
+  <div class="chat-body">
+    <p>This is admin panel.</p>
+  </div>
+</div>
+
+<script>
+async function addSlide(){
+ await fetch("http://localhost:5000/api/slides",{
+  method:"POST",
+  headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({
+    title:title.value,
+    description:desc.value,
+    image:img.value
+  })
+ })
+ alert("Slide Added!");
+}
+</script>
+
+<!-- IMPORTANT -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
